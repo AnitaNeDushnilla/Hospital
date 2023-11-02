@@ -1,0 +1,58 @@
+﻿<Window x:Class="Hospital.MyHistoryWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Hospital"
+        mc:Ignorable="d"
+        Title="MyHistoryWindow" Height="950" Width="1800">
+    <Grid Background="#FFD7FFFA">
+
+        <!--Кнопочка выйти
+                \\\\
+        <Button Height="100" Width="100" 
+                HorizontalAlignment="Left" 
+                VerticalAlignment="Top" BorderBrush="{x:Null}">
+            <Button.Background>
+                <ImageBrush ImageSource="C:\Users\Преподаватель\Desktop\День 4-5\Файлы для импорта 4 день\Group 2.png"/>
+            </Button.Background>
+
+        </Button>-->
+
+
+        <TextBlock  Margin="0, 50"
+                    VerticalAlignment="Top"
+                    HorizontalAlignment="Center"
+                    Text="Моя история" 
+                    TextAlignment="Center"
+                    FontSize="45"
+                    Foreground="White"
+                    Height="70"
+                    Width="650"
+                    Background="#FF71AADA">
+        </TextBlock>
+
+        <DataGrid HorizontalAlignment="Center" 
+                  VerticalAlignment="Center"
+                  Height="650" 
+                  Width="1000" 
+                  Background="#FFAAD9E0"
+                 />
+
+        <WrapPanel VerticalAlignment="Bottom" HorizontalAlignment="Center">
+            <Button x:Name="btnBack"
+                  Height="90"
+                  Width="300"                 
+                  Margin="50, 35"
+                  Background="#FF78C9CD" 
+                  BorderBrush="{x:Null}" 
+                  Foreground="White"
+                  FontSize="45"
+                  Content="Назад">
+
+            </Button>
+        </WrapPanel>
+
+
+    </Grid>
+</Window>
